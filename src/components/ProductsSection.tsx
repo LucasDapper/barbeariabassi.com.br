@@ -157,38 +157,7 @@ export default function ProductsSection() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {perfumes.map((item) => (
-          <div
-            key={item.name}
-            className="bg-[#1a0f0a] border border-[#c9a06a]/20 rounded-2xl overflow-hidden hover:border-[#c9a06a]/60 hover:-translate-y-1 transition-all duration-300 group flex flex-col"
-          >
-            <div className="relative h-48 flex-shrink-0">
-              <Image
-                src={item.image}
-                alt={item.name}
-                fill
-                sizes="(max-width: 640px) 100vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="p-4 flex flex-col gap-3 flex-1">
-              <div>
-                <h3 className="text-white font-bold text-sm leading-tight mb-1">{item.name}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{item.description}</p>
-              </div>
-              <Link
-                href={WA}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto w-full text-center bg-[#c9a06a] hover:bg-[#b8905a] text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-all duration-200 hover:scale-[1.02]"
-              >
-                Solicitar pelo WhatsApp
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
+      <ProductCarousel items={perfumes} />
 
     </section>
   );
