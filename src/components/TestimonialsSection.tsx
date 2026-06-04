@@ -1,46 +1,54 @@
 type Testimonial = {
   name: string;
-  date: string;
   text: string;
   initial: string;
 };
 
 const testimonials: Testimonial[] = [
   {
-    name: "Rafael Oliveira",
-    date: "há 2 semanas",
-    text: "Melhor barbearia da região! O atendimento é de altíssimo nível e o corte ficou exatamente como eu queria. Já sou cliente fiel há mais de 1 ano. Super recomendo!",
-    initial: "R",
+    name: "Lucas Dapper Dos Santos",
+    initial: "L",
+    text: "Atendimento excelente tanto para crianças quanto para adultos. Profissionais muito competentes, ambiente descontraído para fazer networking e dar boas risadas, além de sair com um corte impecável. Recomendo!",
   },
   {
-    name: "Carlos Eduardo",
-    date: "há 1 mês",
-    text: "Ambiente incrível, profissionais muito capacitados e produtos de primeira. O combo cabelo + barba vale muito a pena. Sai me sentindo uma pessoa nova!",
-    initial: "C",
-  },
-  {
-    name: "Marcos Vinicius",
-    date: "há 3 semanas",
-    text: "Nunca me senti tão bem com minha aparência. A barba ficou impecável e o corte combinou perfeitamente. Atendimento rápido e super agradável!",
+    name: "Moriel De Almeida Martins",
     initial: "M",
+    text: "Espaço muito bem climatizado, organizado! Luiz Fernando sempre muito bem atencioso, meu filho de 6 meses no primeiro corte de cabelo. Fernando já é referência!!!",
   },
   {
-    name: "João Paulo",
-    date: "há 2 meses",
-    text: "Fui pela primeira vez indicado por um amigo e já me tornei cliente fixo. A qualidade é incomparável. Barbearia Bassi é referência de estilo e qualidade.",
-    initial: "J",
+    name: "Adjair José",
+    initial: "A",
+    text: "Barbearia de excelência, profissionais e serviços de qualidade, além do atendimento rápido e resultados que superam as nossas expectativas, sou cliente e recomendo!",
   },
   {
-    name: "Felipe Andrade",
-    date: "há 1 semana",
-    text: "Excelente custo-benefício! Saí muito satisfeito com o resultado. O ambiente é confortável e os profissionais são super atenciosos e detalhistas.",
-    initial: "F",
+    name: "Aline Oliveira de Jesus",
+    initial: "A",
+    text: "Barbearia Bassi é linda, atendimento maravilhoso, espaço organizado. A melhor de Sinop! Parabéns Luiz e equipe, continuem atendendo em excelência 👏👏",
   },
   {
-    name: "Rodrigo Sousa",
-    date: "há 5 dias",
-    text: "Atendimento nota 10! Me indicaram o corte perfeito para o meu tipo de cabelo e ficou incrível. Com certeza voltarei sempre. Muito obrigado, equipe Bassi!",
+    name: "Rafael Freire",
     initial: "R",
+    text: "Atendimento nota 10, corte do jeito que o cliente desejar, preço justo. Recomendo ✂️👏",
+  },
+  {
+    name: "Neuza Giane Dapper",
+    initial: "N",
+    text: "Excelente atendimento, local moderno e aconchegante! Fácil localização. E o melhor: um preço acessível. Parabéns!!!",
+  },
+  {
+    name: "Elisandra Da Silva Conceição",
+    initial: "E",
+    text: "Corte do meu marido e meu filho sensacional. Meu filho ficou super feliz com o corte.",
+  },
+  {
+    name: "Gabriel Muller",
+    initial: "G",
+    text: "Barbearia com atendimento excelente, ambiente aconchegante e profissionalismo sem igual!",
+  },
+  {
+    name: "Flavio Sousa",
+    initial: "F",
+    text: "Super atendimento, mão de obra qualificada e ambiente muito agradável.",
   },
 ];
 
@@ -95,7 +103,7 @@ export default function TestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t) => (
             <div
-              key={t.name + t.date}
+              key={t.name}
               className="bg-[#1a0f0a] border border-[#c9a06a]/20 rounded-2xl p-6 hover:border-[#c9a06a]/50 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">
@@ -103,10 +111,7 @@ export default function TestimonialsSection() {
                   <div className="w-10 h-10 rounded-full bg-[#c9a06a] flex items-center justify-center text-white font-bold text-base flex-shrink-0">
                     {t.initial}
                   </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm">{t.name}</p>
-                    <p className="text-gray-600 text-xs">{t.date}</p>
-                  </div>
+                  <p className="text-white font-semibold text-sm">{t.name}</p>
                 </div>
                 <GoogleIcon />
               </div>
@@ -114,6 +119,21 @@ export default function TestimonialsSection() {
               <p className="text-gray-400 text-sm leading-relaxed mt-3">{t.text}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-gray-500 text-sm mb-5">
+            Gostou do atendimento? Deixe sua avaliação no Google e nos ajude a crescer!
+          </p>
+          <a
+            href="https://share.google/l0u99tnWlaYOuYV9r"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-800 font-bold py-3.5 px-8 rounded-full text-sm transition-all duration-200 hover:scale-105 shadow-lg"
+          >
+            <GoogleIcon />
+            Avaliar no Google
+          </a>
         </div>
       </div>
     </section>

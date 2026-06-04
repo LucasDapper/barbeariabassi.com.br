@@ -4,37 +4,30 @@ import Link from "next/link";
 type Product = {
   name: string;
   description: string;
-  price: string;
   image: string;
   tag: string;
 };
 
 const products: Product[] = [
   {
-    name: "Pomada Modeladora Matte",
+    name: "Fox For Men Pasta Black",
     description:
-      "Fixação forte com acabamento opaco e natural. Ideal para penteados modernos e definidos.",
-    price: "R$ 49,90",
-    image:
-      "https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=500&q=80",
+      "Pasta Premium com fixação extra forte e acabamento escurecido. Perfeita para definir e modelar com estilo.",
+    image: "/Galeria/Produtos/P_001.jpg",
     tag: "Mais Vendido",
   },
   {
-    name: "Óleo para Barba Premium",
+    name: "Fox One Premium Modelador",
     description:
-      "Nutre, amacia e dá brilho à barba com fragrância amadeirada sofisticada.",
-    price: "R$ 39,90",
-    image:
-      "https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?w=500&q=80",
+      "Modelador profissional de fixação média que modela e fixa o penteado sem pesar, para todos os tipos de cabelo.",
+    image: "/Galeria/Produtos/P_002.jpg",
     tag: "Novo",
   },
   {
-    name: "Shampoo Anticaspa Pro",
+    name: "Fox For Men Leave-In",
     description:
-      "Fórmula especial para couro cabeludo sensível com ação anticaspa e hidratante.",
-    price: "R$ 34,90",
-    image:
-      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&q=80",
+      "Leave-in de uso diário com hidratação intensa, proteção térmica, controle do frizz e brilho sem enxágue.",
+    image: "/Galeria/Produtos/P_003.jpg",
     tag: "Exclusivo",
   },
 ];
@@ -73,26 +66,23 @@ export default function ProductsSection() {
                   {product.tag}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-white font-bold text-lg mb-1">
-                  {product.name}
-                </h3>
-                <p className="text-gray-500 text-sm mb-5">
-                  {product.description}
-                </p>
-                <div className="flex items-center justify-between">
-                  <p className="text-[#c9a06a] font-extrabold text-2xl">
-                    {product.price}
+              <div className="p-6 flex flex-col gap-4">
+                <div>
+                  <h3 className="text-white font-bold text-lg mb-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {product.description}
                   </p>
-                  <Link
-                    href="https://wa.me/556699159353"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#c9a06a] hover:bg-[#b8905a] text-white text-sm font-semibold py-2 px-5 rounded-full transition-colors duration-200"
-                  >
-                    Solicitar
-                  </Link>
                 </div>
+                <Link
+                  href="https://wa.me/556699159353"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-[#c9a06a] hover:bg-[#b8905a] text-white font-bold py-3 px-6 rounded-xl text-base transition-all duration-200 hover:scale-[1.02] shadow-md shadow-[#c9a06a]/20"
+                >
+                  Solicitar pelo WhatsApp
+                </Link>
               </div>
             </div>
           ))}

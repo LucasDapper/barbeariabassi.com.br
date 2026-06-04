@@ -35,7 +35,7 @@ export default function Footer() {
           className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-full text-base transition-all duration-300 hover:scale-105 shadow-lg"
         >
           <WhatsAppIcon />
-          Agendar pelo WhatsApp
+          Falar pelo WhatsApp
         </Link>
       </div>
 

@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/556699159353"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Agendar pelo WhatsApp"
+      aria-label="Fale conosco pelo WhatsApp"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-2xl transition-transform duration-300 hover:scale-110 hover:bg-green-400"
       style={{ animation: "whatsapp-pulse 2s infinite" }}
     >

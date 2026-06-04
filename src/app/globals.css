@@ -14,6 +14,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset para navbar fixa ao navegar por âncoras */
+[id] {
+  scroll-margin-top: 5rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

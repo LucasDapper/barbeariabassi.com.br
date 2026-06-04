@@ -41,7 +41,7 @@ export default function AboutSection() {
           <p className="text-gray-400 leading-relaxed">
             Com profissionais altamente qualificados e produtos premium
             selecionados a dedo, garantimos que cada cliente saia renovado,
-            confiante e com um visual impecável. Aqui, cada detalhe importa —
+            confiante e com um visual impecável. Aqui, cada detalhe importa,
             do atendimento ao acabamento final.
           </p>
 

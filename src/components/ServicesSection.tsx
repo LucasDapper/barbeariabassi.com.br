@@ -1,43 +1,21 @@
-import { Scissors, User, Package, Sparkles } from "lucide-react";
-import Link from "next/link";
+import { Flame, Zap, Scissors, User, Layers, Star, Sparkles, Clock } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
   name: string;
-  description: string;
-  price: string;
+  duration: string;
 };
 
 const services: Service[] = [
-  {
-    icon: Scissors,
-    name: "Corte de Cabelo",
-    description:
-      "Corte moderno e personalizado, adaptado ao seu estilo e formato de rosto por mãos especializadas.",
-    price: "R$ 35,00",
-  },
-  {
-    icon: User,
-    name: "Barba Premium",
-    description:
-      "Barba aparada e modelada com navalha quente, toalha morna e produtos hidratantes de alta qualidade.",
-    price: "R$ 30,00",
-  },
-  {
-    icon: Package,
-    name: "Combo Cabelo + Barba",
-    description:
-      "O pacote completo para um visual sofisticado: corte impecável mais barba premium em uma única sessão.",
-    price: "R$ 60,00",
-  },
-  {
-    icon: Sparkles,
-    name: "Sobrancelha",
-    description:
-      "Design e aparação de sobrancelhas com acabamento preciso para um visual harmonioso e marcante.",
-    price: "R$ 15,00",
-  },
+  { icon: Flame,    name: "Barba com Toalha Quente", duration: "30 min" },
+  { icon: Zap,      name: "Barba na Máquina",        duration: "15 min" },
+  { icon: Scissors, name: "Barba na Navalha",        duration: "30 min" },
+  { icon: User,     name: "Cabelo",                  duration: "30 min" },
+  { icon: Layers,   name: "Cabelo e Barba",          duration: "30 min" },
+  { icon: Star,     name: "Cabelo Infantil",         duration: "30 min" },
+  { icon: Scissors, name: "Cabelo na Tesoura",       duration: "30 min" },
+  { icon: Sparkles, name: "Sobrancelha",             duration: "15 min" },
 ];
 
 export default function ServicesSection() {
@@ -57,42 +35,29 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.name}
-                className="bg-[#1a0f0a]/70 border border-[#c9a06a]/25 rounded-2xl p-6 text-center hover:border-[#c9a06a] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center"
+                className="bg-[#1a0f0a]/70 border border-[#c9a06a]/25 rounded-2xl p-5 hover:border-[#c9a06a] hover:-translate-y-1 transition-all duration-300 group flex items-center gap-4"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#c9a06a]/15 rounded-full mb-5 group-hover:bg-[#c9a06a]/25 transition-colors">
-                  <Icon className="w-7 h-7 text-[#c9a06a]" aria-hidden="true" />
+                <div className="flex-shrink-0 inline-flex items-center justify-center w-12 h-12 bg-[#c9a06a]/15 rounded-full group-hover:bg-[#c9a06a]/25 transition-colors">
+                  <Icon className="w-5 h-5 text-[#c9a06a]" aria-hidden="true" />
                 </div>
-                <h3 className="text-white font-bold text-lg mb-3">
-                  {service.name}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed flex-1">
-                  {service.description}
-                </p>
-                <div className="mt-5 pt-4 border-t border-[#c9a06a]/20 w-full">
-                  <p className="text-[#c9a06a] font-extrabold text-2xl">
-                    {service.price}
-                  </p>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-white font-bold text-sm md:text-base leading-tight">
+                    {service.name}
+                  </h3>
+                  <div className="flex items-center gap-1.5 mt-1 text-white/40 text-xs">
+                    <Clock className="w-3 h-3 flex-shrink-0" aria-hidden="true" />
+                    <span>{service.duration}</span>
+                  </div>
                 </div>
               </div>
             );
           })}
-        </div>
-
-        <div className="text-center mt-12">
-          <Link
-            href="https://wa.me/556699159353"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#c9a06a] hover:bg-[#b8905a] text-white font-bold py-4 px-10 rounded-full text-base transition-all duration-300 hover:scale-105 shadow-lg"
-          >
-            Agendar Agora
-          </Link>
         </div>
       </div>
     </section>
