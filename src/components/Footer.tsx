@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { MapPin, Clock, Phone } from "lucide-react";
 
 function WhatsAppIcon() {
@@ -11,10 +11,10 @@ function WhatsAppIcon() {
 
 const navLinks = [
   { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "Serviços" },
+  { href: "#servicos", label: "ServiÃ§os" },
   { href: "#produtos", label: "Produtos" },
   { href: "#galeria", label: "Galeria" },
-  { href: "#avaliacoes", label: "Avaliações" },
+  { href: "#avaliacoes", label: "AvaliaÃ§Ãµes" },
 ];
 
 export default function Footer() {
@@ -26,10 +26,10 @@ export default function Footer() {
           Pronto para renovar o visual?
         </h3>
         <p className="text-white/70 mb-6 text-sm">
-          &ldquo;Seu visual em dia é na <strong className="text-[#c9a06a]">BASSI</strong>&rdquo;
+          &ldquo;Seu visual em dia Ã© na <strong className="text-[#c9a06a]">BASSI</strong>&rdquo;
         </p>
         <Link
-          href="https://wa.me/556699159353"
+          href="https://wa.me/556692218987"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-full text-base transition-all duration-300 hover:scale-105 shadow-lg"
@@ -47,17 +47,17 @@ export default function Footer() {
             Barbearia Bassi
           </h4>
           <p className="text-gray-500 text-sm italic mb-4">
-            &ldquo;Seu visual em dia é na BASSI&rdquo;
+            &ldquo;Seu visual em dia Ã© na BASSI&rdquo;
           </p>
           <p className="text-gray-600 text-xs leading-relaxed">
-            Oferecemos uma experiência premium de cuidados masculinos com
+            Oferecemos uma experiÃªncia premium de cuidados masculinos com
             profissionais qualificados e produtos de alta qualidade.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h5 className="text-white font-semibold mb-4">Navegação</h5>
+          <h5 className="text-white font-semibold mb-4">NavegaÃ§Ã£o</h5>
           <ul className="space-y-2">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -74,18 +74,18 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h5 className="text-white font-semibold mb-4">Contato &amp; Horário</h5>
+          <h5 className="text-white font-semibold mb-4">Contato &amp; HorÃ¡rio</h5>
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 text-[#c9a06a] mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span className="text-gray-500 text-sm">
-                Av. Acácias, 2120B – Res. Norte
+                Av. AcÃ¡cias, 2120B â€“ Res. Norte
               </span>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-[#c9a06a] flex-shrink-0" aria-hidden="true" />
               <Link
-                href="https://wa.me/556699159353"
+                href="https://wa.me/556692218987"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#c9a06a] text-sm transition-colors"
@@ -96,7 +96,7 @@ export default function Footer() {
             <li className="flex items-center gap-3">
               <Clock className="w-4 h-4 text-[#c9a06a] flex-shrink-0" aria-hidden="true" />
               <span className="text-gray-500 text-sm">
-                Seg a Sáb, 08:00 às 19:00
+                Seg a SÃ¡b, 08:00 Ã s 19:00
               </span>
             </li>
           </ul>
@@ -105,7 +105,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-[#c9a06a]/10 py-4 px-4 text-center text-gray-700 text-xs">
-        © 2026 Barbearia Bassi. Todos os direitos reservados.
+        Â© 2026 Barbearia Bassi. Todos os direitos reservados.
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const WA = "https://wa.me/556699159353";
+const WA = "https://wa.me/556692218987";
 const CARD_W = 260;
 const GAP = 12;
 const ITEM_W = CARD_W + GAP;

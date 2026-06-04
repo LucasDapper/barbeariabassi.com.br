@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function WhatsAppButton() {
   return (
     <Link
-      href="https://wa.me/556699159353"
+      href="https://wa.me/556692218987"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"

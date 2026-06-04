@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -6,8 +6,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#sobre",     label: "Nossa História" },
-  { href: "#servicos",  label: "Serviços" },
+  { href: "#sobre",     label: "Nossa HistÃ³ria" },
+  { href: "#servicos",  label: "ServiÃ§os" },
   { href: "#produtos",  label: "Produtos" },
   { href: "#galeria",   label: "Ambiente" },
   { href: "#avaliacoes",label: "Feedbacks" },
@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" aria-label="Barbearia Bassi — início">
+        <a href="#" aria-label="Barbearia Bassi â€” inÃ­cio">
           <Image
             src="/Galeria/Logo/L_002.jpg"
             alt="Barbearia Bassi"
@@ -56,7 +56,7 @@ export default function Navbar() {
             </a>
           ))}
           <Link
-            href="https://wa.me/556699159353"
+            href="https://wa.me/556692218987"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#c9a06a] hover:bg-[#b8905a] text-white text-xs font-bold py-2.5 px-6 rounded-full uppercase tracking-widest transition-all duration-200 hover:scale-105 shadow-md shadow-[#c9a06a]/25"
@@ -93,7 +93,7 @@ export default function Navbar() {
             </a>
           ))}
           <Link
-            href="https://wa.me/556699159353"
+            href="https://wa.me/556692218987"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 text-center bg-[#c9a06a] hover:bg-[#b8905a] text-white font-bold py-3 rounded-full text-sm uppercase tracking-widest transition-colors duration-200"
