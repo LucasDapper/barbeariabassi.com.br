@@ -58,11 +58,11 @@ export default function HeroSection() {
         priority
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#5e3019]/80 via-[#1a0f0a]/75 to-[#0d0704]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#5e3019]/50 via-[#1a0f0a]/55 to-[#0d0704]" />
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto flex flex-col items-center gap-6">
         <span className="text-[#c9a06a] text-xs md:text-sm uppercase tracking-[0.3em] font-medium">
-          Experiência Premium em Cuidados Masculinos
+          Experiência Premium em Cada Detalhe
         </span>
 
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
