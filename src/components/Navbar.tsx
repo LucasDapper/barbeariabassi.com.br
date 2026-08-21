@@ -6,8 +6,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#sobre",     label: "Nossa HistÃ³ria" },
-  { href: "#servicos",  label: "ServiÃ§os" },
+  { href: "#sobre",     label: "Nossa História" },
+  { href: "#servicos",  label: "Serviços" },
   { href: "#produtos",  label: "Produtos" },
   { href: "#galeria",   label: "Ambiente" },
   { href: "#avaliacoes",label: "Feedbacks" },
@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" aria-label="Barbearia Bassi â€” inÃ­cio">
+        <a href="#" aria-label="Barbearia Bassi — início">
           <Image
             src="/Galeria/Logo/L_002.jpg"
             alt="Barbearia Bassi"
